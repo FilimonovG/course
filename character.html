@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Киногерои</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
+  <link rel="icon" type="image/png" href="img/logo.png">
+
+  <script src="js/script.js"></script>
+  <script src="js/page.js"></script>
+
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+  <meta name="viewport" content="width=device-width">
+</head>
+
+<body id="body">
+
+<header id="header" class="header">
+  <div class="header-wrapper">
+    <img class="burger" src="img/burger.png" onclick="burgerMenu()">
+    <div class="header__content">
+      <img class="header-logo" src="img/logo.png">
+      <a href="index.html" class="content__link">Главная</a>
+      <div class="drop-down"><span>Герои фильмов</span>
+        <div class="drop-down__content">
+          <div class="column">
+            <a href="action-films.html">Боевики</a>
+            <a href="work-in-progress.html">Детективы</a>
+            <a href="work-in-progress.html">Документальные</a>
+            <a href="work-in-progress.html">Драмы</a>
+          </div>
+          <div class="column">
+            <a href="work-in-progress.html">Комедии</a>
+            <a href="work-in-progress.html">Приключения</a>
+            <a href="work-in-progress.html">Фантастика</a>
+            <a href="work-in-progress.html">Фэнтези</a>
+          </div>
+        </div>
+      </div>
+      <div class="drop-down"><span>Герои сериалов</span>
+        <div class="drop-down__content">
+          <div class="column">
+            <a href="work-in-progress.html">Боевики</a>
+            <a href="work-in-progress.html">Детективы</a>
+            <a href="work-in-progress.html">Документальные</a>
+            <a href="work-in-progress.html">Драмы</a>
+          </div>
+          <div class="column">
+            <a href="work-in-progress.html">Комедии</a>
+            <a href="work-in-progress.html">Приключения</a>
+            <a href="work-in-progress.html">Фантастика</a>
+            <a href="work-in-progress.html">Фэнтези</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="search">
+      <input type="text" class="search-field" id="search-field" placeholder="Поиск" disabled>
+      <img id="search-img" src="img/search.png">
+      <div class="search-result"></div>
+    </div>
+  </div>
+
+</header>
+
+<main id="main" class="main">
+  <p id="name" class="main__header"></p>
+  <div class="main__description">
+    <img id="main_img" class="main__top-img" src="" alt="">
+    <ul id="films" class="films-list"><span class="bold">Появления:</span>
+
+    </ul>
+    <p  class="main__text-content"><span class="bold">Актёр:</span><br><span id="actor"></span></p>
+    <p id="short-description" class="main__text-content">
+      <span id="quote" class="italic"></span>
+    </p>
+  </div>
+
+
+  <div class="main__content">
+    <div id="content"></div>
+    <p class="main__subheader">Галерея</p>
+    <div id="gallery" class="gallery">
+    </div>
+  </div>
+
+  <a id="top-anchor" class="top-anchor" href="#header">Наверх</a>
+
+</main>
+
+
+
+<footer id="footer" class="footer">
+  <div class="footer-content">
+    <span class="footer-content__text">Контакты: filimonov.g.v@edu.mirea.ru</span>
+  </div>
+</footer>
+
+</body>
+</html>

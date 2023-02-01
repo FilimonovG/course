@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+		<title>Киногерои</title>
+
+		<link rel="stylesheet" href="css/style.css" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
+		<link rel="icon" type="image/png" href="img/logo.png">
+
+		<script src="js/script.js"></script>
+		<script src="js/slider.js"></script>
+
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<meta name="viewport" content="width=device-width">
+	</head>
+
+	<body >
+
+		<header id="header" class="header">
+			<div class="header-wrapper">
+				<img class="burger" src="img/burger.png" onclick="burgerMenu()">
+				<div class="header__content">
+					<img class="header-logo" src="img/logo.png">
+					<a href="index.html" class="content__link">Главная</a>
+					<div class="drop-down"><span>Герои фильмов</span>
+						<div class="drop-down__content">
+							<div class="column">
+								<a href="action-films.html">Боевики</a>
+								<a href="work-in-progress.html">Детективы</a>
+								<a href="work-in-progress.html">Документальные</a>
+								<a href="work-in-progress.html">Драмы</a>
+							</div>
+							<div class="column">
+								<a href="work-in-progress.html">Комедии</a>
+								<a href="work-in-progress.html">Приключения</a>
+								<a href="work-in-progress.html">Фантастика</a>
+								<a href="work-in-progress.html">Фэнтези</a>
+							</div>
+						</div>
+					</div>
+					<div class="drop-down"><span>Герои сериалов</span>
+						<div class="drop-down__content">
+							<div class="column">
+								<a href="work-in-progress.html">Боевики</a>
+								<a href="work-in-progress.html">Детективы</a>
+								<a href="work-in-progress.html">Документальные</a>
+								<a href="work-in-progress.html">Драмы</a>
+							</div>
+							<div class="column">
+								<a href="work-in-progress.html">Комедии</a>
+								<a href="work-in-progress.html">Приключения</a>
+								<a href="work-in-progress.html">Фантастика</a>
+								<a href="work-in-progress.html">Фэнтези</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="search">
+					<input type="text" class="search-field" id="search-field" placeholder="Поиск" disabled>
+					<img id="search-img" src="img/search.png">
+					<div class="search-result"></div>
+				</div>
+			</div>
+
+		</header>
+
+
+
+		<div class="slider-wrapper">
+			<div class="slider">
+				<div id="slider-track" class="slider-track">
+
+					<div class="slide">
+						<a href="character.html?id=1">
+							<img class="slider-img" src="img/iron_man.png" alt="">
+						</a>
+					</div>
+					<div class="slide">
+						<a href="character.html?id=3">
+							<img class="slider-img" src="img/jack_sparrow.jpg" alt="">
+						</a>
+					</div>
+					<div class="slide">
+						<a href="character.html?id=2">
+							<img class="slider-img" src="img/terminator.jpg" alt="">
+						</a>
+					</div>
+					<div class="slide">
+						<a href="character.html?id=wip">
+							<img class="slider-img" src="img/gandalf.png" alt="">
+						</a>
+					</div>
+					<div class="slide">
+						<a href="character.html?id=wip">
+							<img class="slider-img" src="img/main-gallery/mask.png" alt="">
+						</a>
+					</div>
+					<div class="slide">
+						<a href="character.html?id=wip">
+							<img class="slider-img" src="img/main-gallery/home-alone.jpg" alt="">
+						</a>
+					</div>
+
+				</div>
+			</div>
+			<div id="previous" class="slider-btn-previous"></div>
+			<div  id="next" class="slider-btn-next"></div>
+		</div>
+
+
+
+		<main class="main">
+			<div class="action-movie">
+				<p class="main__subheader">Боевики</p>
+				<div class="main-gallery">
+					<a href="character.html?id=1">
+						<div class="gallery__card">
+							<img class="gallery__img" src="img/iron_man.png">
+							<p class="name">Железный человек</p>
+						</div>
+					</a>
+					<a href="character.html?id=2">
+						<div class="gallery__card">
+							<img class="gallery__img" src="img/terminator.jpg">
+							<p class="name">Терминатор</p>
+						</div>
+					</a>
+					<a href="character.html?id=wip">
+						<div class="gallery__card">
+							<img class="gallery__img" src="img/morpheus.jpg">
+							<p class="name">Морфеус</p>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="detective-movie">
+				<p class="main__subheader">Детективы</p>
+				<div class="main-gallery">
+					<a href="character.html?id=wip">
+						<div class="gallery__card">
+							<img class="gallery__img" src="img/main-gallery/sh.jpg">
+							<p class="name">Шерлок Холмс</p>
+						</div>
+					</a>
+					<a href="character.html?id=wip">
+						<div class="gallery__card">
+							<img class="gallery__img" src="img/main-gallery/puaro.jpg">
+							<p class="name">Эркюль Пуаро</p>
+						</div>
+					</a>
+					<a href="character.html?id=wip">
+						<div class="gallery__card">
+							<img class="gallery__img" src="img/main-gallery/Dr._John_Watson.png">
+							<p class="name">Доктор Ватсон</p>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="comedy-movie">
+				<p class="main__subheader">Комедии</p>
+				<div class="main-gallery">
+					<a href="character.html?id=wip">
+						<div class="gallery__card">
+							<img class="gallery__img" src="img/main-gallery/mask.png">
+							<p class="name">Маска</p>
+						</div>
+					</a>
+					<a href="character.html?id=wip">
+						<div class="gallery__card">
+							<img class="gallery__img" src="img/main-gallery/home-alone.jpg">
+							<p class="name">Кевин Маккаллистер</p>
+						</div>
+					</a>
+					<a href="character.html?id=wip">
+						<div class="gallery__card">
+							<img class="gallery__img" src="img/main-gallery/ace.jpg">
+							<p class="name">Эйс Вентура</p>
+						</div>
+					</a>
+				</div>
+			</div>
+
+
+			<a id="top-anchor" class="top-anchor" href="#header">Наверх</a>
+
+		</main>
+
+
+
+		<footer id="footer" class="footer">
+			<div class="footer-content">
+				<span class="footer-content__text">Контакты: filimonov.g.v@edu.mirea.ru</span>
+			</div>
+		</footer>
+
+	</body>
+</html>
